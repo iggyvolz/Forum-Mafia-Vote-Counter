@@ -1,7 +1,7 @@
 function forummafiavotecounter()
 {
     // Requires jQuery
-    if(typeof jQuery === 'undefined')
+    if(typeof $ === 'undefined')
     {
 	return;
     }

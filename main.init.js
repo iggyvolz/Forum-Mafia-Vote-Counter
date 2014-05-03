@@ -1,1 +1,1 @@
-function forummafiavotecounter(){if(typeof jQuery==="undefined"){return}}forummafiavotecounter();
+function forummafiavotecounter(){if(typeof $==="undefined"){return}}forummafiavotecounter();
