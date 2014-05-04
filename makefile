@@ -1,2 +1,2 @@
 all:
-	yuicompressor main.js -o main.init.js
+	yuicompressor main.js -o main.min.js
