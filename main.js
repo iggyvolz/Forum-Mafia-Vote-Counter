@@ -6,6 +6,7 @@ function forummafiavotecounter_pagetoposts() {
     jQuery('.postbody .content blockquote').remove(); // Remove all block quotes - these will result in non-real votes
     posts = [];
     votes = [];
+    toAlert="Current votes: \n";
     jQuery('.postbody').each(function (a, b) {
         posts.push([forummafiavotecounter_getauthor(b), forummafiavotecounter_getpostbody(b)]);
     });
@@ -14,8 +15,11 @@ function forummafiavotecounter_pagetoposts() {
 	if(vote!==null)
 	{
 	    votes.push(vote);
+	    toAlert+=vote;
+	    toAlert+="\n";
 	}
     }
+    alert(toAlert);
 }
 
 function forummafiavotecounter_getauthor(post) {
